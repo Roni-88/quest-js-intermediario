@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.formulario {
+    background-image: url(imagens/bg-repeat.jpg);
+    position: relative;
+    height: 450px;
+    width: 760px;
+}
+
+.formulario .aviso {
+    position: absolute;
+    width: 422px;
+    padding: 150px 40px;
+    color: #fff;
+}
+
+.formulario .aviso h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.formulario .aviso p {
+    font-size: 15px;
+    font-weight: 300;
+    width: 300px;
+}
+
+.informacoes {
+    background-color: #fff;
+    position: absolute;
+    width: 340px;
+    height: 400px;
+    left: 380px;
+    top: 22px;
+}
+
+.informacoes input {
+    width: 301px;
+    height: 35px;
+    margin: 15px 22px 5px 22px;
+    border-radius: 5px;   
+}
+
+.informacoes p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    padding-left: 21px;
+    margin-top: 5px;
+}
+
+.informacoes button {
+    background-color: #3ccc87;
+    color: #fff;
+    border-radius: 5px;
+    width: 298px;
+    height: 41px;
+    border: none;
+    margin: 22px 22px;
+    cursor: pointer;
+}
+
+.informacoes textarea {
+    margin-top: 15px;
+    margin-left: 22px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
