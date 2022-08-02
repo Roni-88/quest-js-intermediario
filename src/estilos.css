@@ -66,4 +66,5 @@
     margin-left: 22px;
     border: 2px solid #000;
     border-radius: 5px;
+    resize: none;
 }
