@@ -18,7 +18,7 @@
 .formulario .aviso h1 {
     font-size: 45px;
     font-weight: 900;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .formulario .aviso p {
@@ -30,32 +30,31 @@
 .informacoes {
     background-color: #fff;
     width: 440px;
-    height: 600px;
+    height: 500px;
     left: 380px;
     top: 22px;
 }
 
 .informacoes input {
-    width: 301px;
-    height: 35px;
-    margin: 15px 22px 5px 22px;
+    width: 398px;
+    height: 45px;
+    margin: 20px 22px 8px 22px;
     border-radius: 5px;   
 }
 
 .informacoes p {
     font-size: 15px;
-    font-weight: 300;
     line-height: 18px;
     padding-left: 21px;
     margin-top: 5px;
 }
 
-.informacoes button {
+.informacoes .btn {
     background-color: #3ccc87;
     color: #fff;
     border-radius: 5px;
-    width: 298px;
-    height: 41px;
+    width: 398px;
+    height: 45px;
     border: none;
     margin: 22px 22px;
     cursor: pointer;
