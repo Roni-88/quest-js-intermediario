@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 .formulario {
+    display: flex;
     background-image: url(imagens/bg-repeat.jpg);
-    position: relative;
-    height: 450px;
-    width: 760px;
+    background-size: contain;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
 }
 
-.formulario .aviso {
-    position: absolute;
-    width: 422px;
-    padding: 150px 40px;
+.formulario .aviso {    
+    width: 550px;
     color: #fff;
 }
 
 .formulario .aviso h1 {
-    font-size: 20px;
+    font-size: 45px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .formulario .aviso p {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 300;
-    width: 300px;
+    width: 500px;
 }
 
 .informacoes {
     background-color: #fff;
-    position: absolute;
-    width: 340px;
-    height: 400px;
+    width: 440px;
+    height: 600px;
     left: 380px;
     top: 22px;
 }
