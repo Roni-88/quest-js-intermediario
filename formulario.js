@@ -1,6 +1,19 @@
 //Obj 1 - Ao clicar enviar se não tiver preenchido o campo, mostrar a msg de erro (campo obrigatório) embaixo de cada input e pintar o campo de vermelho.
 
-//Quando o usuário clicar, é necessário que o programa verifique se os campos (input e textarea) estão vazios. Em caso positivo, tranformar a borda dos campos em vermelha e fazer aparecer uma msg de erro abaixo deles.
+//Passo 1 - Quando o usuário clicar.
+//Passo 2 - É necessário que o programa verifique se os campos (input e textarea) estão vazios. 
+//Passo 3 - Em caso positivo, tranformar a borda dos campos em vermelha e fazer aparecer uma msg de erro abaixo deles.
+
+
+document
+.getElementById ('botao')
+.addEventListener ('click', function (event) {
+
+    console.log (event.target.value)
+})
+
+
+
 
 //Obj 2 - Ao clicar, estando tudo preenchido, deixar a borda verde.
 
