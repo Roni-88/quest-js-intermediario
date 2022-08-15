@@ -4,13 +4,22 @@
 //Passo 2 - É necessário que o programa verifique se os campos (input e textarea) estão vazios. 
 //Passo 3 - Em caso positivo, tranformar a borda dos campos em vermelha e fazer aparecer uma msg de erro abaixo deles.
 
+const cliqueEnviar = document.getElementById ('botao')
+let estadoAtual = 0
 
-document
-.getElementById ('botao')
-.addEventListener ('click', function (event) {
+cliqueEnviar.addEventListener ('click', function () {
+    if (estadoAtual === 0) {
 
-    console.log (event.target.value)
+    }
 })
+
+function resultadoErro () {
+    
+}
+
+function resultadoAcerto () {
+
+}
 
 
 
