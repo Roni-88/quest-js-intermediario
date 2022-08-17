@@ -4,22 +4,27 @@
 //Passo 2 - É necessário que o programa verifique se os campos (input e textarea) estão vazios. 
 //Passo 3 - Em caso positivo, tranformar a borda dos campos em vermelha e fazer aparecer uma msg de erro abaixo deles.
 
-const cliqueEnviar = document.getElementById ('botao')
-let estadoAtual = 0
+const botao = document.getElementById ('botao')
 
-cliqueEnviar.addEventListener ('click', function () {
-    if (estadoAtual === 0) {
+//Passo 1 - Quando o usuário clicar.
+botao.addEventListener ('click', function (event) {
+    event.preventDefault()
 
-    }
+    //pegar o conteúdo do campo, possivelmente com o innerHTML
+
+    const inputNome = document.getElementById ('nome')
+    console.log (inputNome.target.value)
+
+    const inputEmail = document.getElementById ('email')
+    console.log(inputEmail)
+
+    const inputTelefone = document.getElementById ('telefone')
+    console.log(inputTelefone)
+
+    const inputMensagem = document.getElementById ('mensagem')
+    console.log(inputMensagem)
+
 })
-
-function resultadoErro () {
-    
-}
-
-function resultadoAcerto () {
-
-}
 
 
 
