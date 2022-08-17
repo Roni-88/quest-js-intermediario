@@ -23,13 +23,8 @@ botao.addEventListener ('click', function (event) {
 
     const inputMensagem = document.getElementById ('mensagem')
     console.log(inputMensagem)
-
 })
-
-
-
 
 //Obj 2 - Ao clicar, estando tudo preenchido, deixar a borda verde.
 
 //Quando o usuário clicar, e o valor retornado for diferente de vazio, colocar uma borda verde nos campos (input e textarea).
-
