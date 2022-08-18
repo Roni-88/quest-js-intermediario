@@ -10,10 +10,10 @@ const botao = document.getElementById ('botao')
 botao.addEventListener ('click', function (event) {
     event.preventDefault()
 
-    //pegar o conteúdo do campo, possivelmente com o innerHTML
+    //pegar o conteúdo do campo, possivelmente com o innerHTML ou VALUE
 
     const inputNome = document.getElementById ('nome')
-    console.log (inputNome.target.value)
+    console.log (inputNome)
 
     const inputEmail = document.getElementById ('email')
     console.log(inputEmail)
