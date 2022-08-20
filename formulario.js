@@ -6,24 +6,36 @@
 
 const botao = document.getElementById ('botao')
 
+const inputNome = document.getElementById ('nome')
+const inputEmail = document.getElementById ('email')
+const inputTelefone = document.getElementById ('telefone')
+const inputMensagem = document.getElementById ('mensagem')
+
+let conteudoNome = inputNome.value
+let conteudoEmail = inputEmail.value
+let conteudoTelefone = inputTelefone.value
+let conteudoMensagem = inputMensagem.value
+
+botao.addEventListener ('click', function (clicar) {   
+    if (inputNome.value === '') {
+    inputNome.style.border = '#f52e2e'
+    } else if (inputNome.value === '') {
+        inputNome.style.border = '#00c22b'
+    }
+
+
+    clicar()
+})
+
+function clicar() {
+    inputNome.innerHTML = ""
+}
+
+
 //Passo 1 - Quando o usuário clicar.
-botao.addEventListener ('click', function (event) {
-    event.preventDefault()
 
     //pegar o conteúdo do campo, possivelmente com o innerHTML ou VALUE
 
-    const inputNome = document.getElementById ('nome')
-    console.log (inputNome)
-
-    const inputEmail = document.getElementById ('email')
-    console.log(inputEmail)
-
-    const inputTelefone = document.getElementById ('telefone')
-    console.log(inputTelefone)
-
-    const inputMensagem = document.getElementById ('mensagem')
-    console.log(inputMensagem)
-})
 
 //Obj 2 - Ao clicar, estando tudo preenchido, deixar a borda verde.
 
