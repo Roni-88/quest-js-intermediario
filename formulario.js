@@ -9,29 +9,40 @@ const botao = document.getElementById ('botao')
 const inputNome = document.getElementById ('nome')
 console.log (inputNome.value)
 const inputEmail = document.getElementById ('email')
+console.log (inputEmail.value)
 const inputTelefone = document.getElementById ('telefone')
-const inputMensagem = document.getElementById ('mensagem')
+console.log (inputTelefone.value)
+const textAreaMensagem = document.getElementById ('mensagem')
+console.log (textAreaMensagem.value)
 
-let conteudoNome = inputNome.value
-let conteudoEmail = inputEmail.value
-let conteudoTelefone = inputTelefone.value
-let conteudoMensagem = inputMensagem.value
+const inputObrigatorio = document.getElementById ('obrigatorio')
+console.log (inputObrigatorio)
 
-botao.addEventListener ('click', function (clicar) {   
-    if (inputNome.value === '') {
-    inputNome.style.border = '#f52e2e'
-    } else if (inputNome.value === '') {
-        inputNome.style.border = '#00c22b'
+botao.addEventListener ('click', function () {   
+    if (inputNome.value == '') {
+        inputNome.style.border = '2px solid #f52e2e'
+    } else if (inputNome.value == '???') {
+        inputNome.style.border = '2px solid #00c22b'
     }
 
+    if (inputEmail.value == '') {
+        inputEmail.style.border = '2px solid #f52e2e'
+    } else if (inputEmail.value == '???') {
+        inputEmail.style.border = '2px solid #00c22b'
+    }
 
-    clicar()
+    if (inputTelefone.value == '') {
+        inputTelefone.style.border = '2px solid #f52e2e'
+    } else if (inputTelefone.value == '???') {
+        inputTelefone.style.border = '2px solid #00c22b'
+    }
+
+    if (textAreaMensagem.value == '') {
+        textAreaMensagem.style.border = '2px solid #f52e2e'
+    } else if (textAreaMensagem.value == '???') {
+        textAreaMensagem.style.border = '2px solid #00c22b'
+    }
 })
-
-function clicar() {
-    inputNome.innerHTML = ""
-}
-
 
 //Passo 1 - Quando o usuário clicar.
 
