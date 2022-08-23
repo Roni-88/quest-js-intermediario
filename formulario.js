@@ -7,6 +7,7 @@
 const botao = document.getElementById ('botao')
 
 const inputNome = document.getElementById ('nome')
+console.log (inputNome.value)
 const inputEmail = document.getElementById ('email')
 const inputTelefone = document.getElementById ('telefone')
 const inputMensagem = document.getElementById ('mensagem')
