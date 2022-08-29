@@ -1,0 +1,23 @@
+@media (max-width: 1150px) {
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aviso {
+        margin: 25px 0 -90px 0;
+        text-align: center;
+    }
+
+    .aviso p {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .aviso {
+        width: 350px;
+    }
+
+    
+}
