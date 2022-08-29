@@ -16,8 +16,27 @@
 
 @media (max-width: 580px) {
     .aviso {
-        max-width: 350px;
+        max-width: 330px;
     }
 
-    
+    .aviso p {
+        max-width: 310px;
+    }
+
+    .informacoes {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .informacoes input {
+        width: 255px;
+    }
+
+    .informacoes textarea {
+        width: 255px;
+    }
+
+    .informacoes .btn {
+        width: 255px;
+    }
 }
