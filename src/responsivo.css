@@ -16,7 +16,7 @@
 
 @media (max-width: 580px) {
     .aviso {
-        width: 350px;
+        max-width: 350px;
     }
 
     
