@@ -9,22 +9,24 @@ console.log(inputTelefone.value)
 const textAreaMensagem = document.getElementById('mensagem')
 console.log(textAreaMensagem.value)
 
-const erroNome = document.querySelector('.erro-nome')
-const erroEmail = document.querySelector('.erro-email')
-const erroTelefone = document.querySelector('.erro-telefone')
-const erroMensagem = document.querySelector('.erro-mensagem')
+// const erroNome = document.querySelector('.erro-nome')
+// const erroEmail = document.querySelector('.erro-email')
+// const erroTelefone = document.querySelector('.erro-telefone')
+// const erroMensagem = document.querySelector('.erro-mensagem')
 
 const inputs = document.querySelectorAll('.inputs')
 console.log(inputs.value)
 
 botao.addEventListener('click', function () {
+    const msgErro = document.querySelectorAll ('.erro')
+    console.log(msgErro)
     inputs.forEach((inputs) => {
         if (inputs.value === '') {
             inputs.style.border = '2px solid #f52e2e'
-            erro.classList.add('mostrar')
+            msgErro.classList.add('mostrar')
         } else {
             inputs.style.border = '2px solid #00c22b'
-            erro.classList.remove('mostrar')
+            msgErro.classList.remove('mostrar')
         }
     })
 })
