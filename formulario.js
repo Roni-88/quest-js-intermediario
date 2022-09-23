@@ -29,15 +29,16 @@ botao.addEventListener('click', function (botao) {
 
         } else {
             itens.classList.add ('preenchido')
-            // erroNome.classList.remove ('mostrar')
-            // erroEmail.classList.remove ('mostrar')
-            // erroTelefone.classList.remove ('mostrar')
-            // erroMensagem.classList.remove ('mostrar')
+            erroNome.classList.remove ('mostrar')
+            erroEmail.classList.remove ('mostrar')
+            erroTelefone.classList.remove ('mostrar')
+            erroMensagem.classList.remove ('mostrar')
         }
     })
 })
 
-// botao.addEventListener ('click', function () {
+// botao.addEventListener ('click', function (botao) {
+//     botao.preventDefault ()
 //     if (inputNome.value === '') {
 //         inputNome.style.border = '2px solid #f52e2e'
 //         erroNome.classList.add ('mostrar')
