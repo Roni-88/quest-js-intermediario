@@ -9,24 +9,30 @@ console.log(inputTelefone.value)
 const textAreaMensagem = document.getElementById('mensagem')
 console.log(textAreaMensagem.value)
 
-// const erroNome = document.querySelector('.erro-nome')
-// const erroEmail = document.querySelector('.erro-email')
-// const erroTelefone = document.querySelector('.erro-telefone')
-// const erroMensagem = document.querySelector('.erro-mensagem')
+const erroNome = document.getElementById('erro-nome')
+const erroEmail = document.getElementById('erro-email')
+const erroTelefone = document.getElementById('erro-telefone')
+const erroMensagem = document.getElementById('erro-mensagem')
 
 const inputs = document.querySelectorAll('.inputs')
 console.log(inputs.value)
 
-botao.addEventListener('click', function () {
+botao.addEventListener('click', function (botao) {
     botao.preventDefault ()
-    const msgErro = document.querySelectorAll ('.erro')
-    inputs.forEach((inputs, indice, array) => {
-        if (inputs.value === '') {
-            inputs.style.border = '2px solid #f52e2e'
-            msgErro.classList.add('mostrar')
+    inputs.forEach((itens, indice, array) => {
+        if (itens.value === '') {
+            itens.classList.add ('vazio')
+            erroNome.classList.add ('mostrar')
+            erroEmail.classList.add ('mostrar')
+            erroTelefone.classList.add ('mostrar')
+            erroMensagem.classList.add ('mostrar')
+
         } else {
-            inputs.style.border = '2px solid #00c22b'
-            msgErro.classList.remove('mostrar')
+            itens.classList.add ('preenchido')
+            // erroNome.classList.remove ('mostrar')
+            // erroEmail.classList.remove ('mostrar')
+            // erroTelefone.classList.remove ('mostrar')
+            // erroMensagem.classList.remove ('mostrar')
         }
     })
 })
