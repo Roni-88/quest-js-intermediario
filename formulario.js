@@ -18,9 +18,9 @@ const inputs = document.querySelectorAll('.inputs')
 console.log(inputs.value)
 
 botao.addEventListener('click', function () {
+    botao.preventDefault ()
     const msgErro = document.querySelectorAll ('.erro')
-    console.log(msgErro)
-    inputs.forEach((inputs) => {
+    inputs.forEach((inputs, indice, array) => {
         if (inputs.value === '') {
             inputs.style.border = '2px solid #f52e2e'
             msgErro.classList.add('mostrar')

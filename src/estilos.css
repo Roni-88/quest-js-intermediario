@@ -75,6 +75,14 @@
     cursor: pointer;
 }
 
+.vazio {
+    border: 2px solid #f52e2e;
+}
+
+.preenchido {
+    border: 2px solid #00c22b;
+}
+
 .erro {
     color:#f52e2e;
     margin-left: 25px;
