@@ -1,14 +1,5 @@
 const botao = document.getElementById('botao')
 
-const inputNome = document.getElementById('nome')
-console.log(inputNome.value)
-const inputEmail = document.getElementById('email')
-console.log(inputEmail.value)
-const inputTelefone = document.getElementById('telefone')
-console.log(inputTelefone.value)
-const textAreaMensagem = document.getElementById('mensagem')
-console.log(textAreaMensagem.value)
-
 const inputs = document.querySelectorAll('.inputs')
 console.log(inputs.value)
 
@@ -17,14 +8,25 @@ botao.addEventListener('click', function (botao) {
     const msgErro = document.querySelectorAll ('.erro')    
     inputs.forEach((itens, indice) => {        
         if (itens.value === '') {
+            itens.classList.remove ('preenchido')
             itens.classList.add ('vazio')
             msgErro[indice].classList.add ('mostrar')
         } else {
+            itens.classList.remove ('vazio')
             itens.classList.add ('preenchido')
             msgErro[indice].classList.remove ('mostrar')
         }
     })
 })
+
+// const inputNome = document.getElementById('nome')
+// console.log(inputNome.value)
+// const inputEmail = document.getElementById('email')
+// console.log(inputEmail.value)
+// const inputTelefone = document.getElementById('telefone')
+// console.log(inputTelefone.value)
+// const textAreaMensagem = document.getElementById('mensagem')
+// console.log(textAreaMensagem.value)
 
 // const erroNome = document.getElementById('erro-nome')
 // const erroEmail = document.getElementById('erro-email')
