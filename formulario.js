@@ -9,33 +9,27 @@ console.log(inputTelefone.value)
 const textAreaMensagem = document.getElementById('mensagem')
 console.log(textAreaMensagem.value)
 
-const erroNome = document.getElementById('erro-nome')
-const erroEmail = document.getElementById('erro-email')
-const erroTelefone = document.getElementById('erro-telefone')
-const erroMensagem = document.getElementById('erro-mensagem')
-
 const inputs = document.querySelectorAll('.inputs')
 console.log(inputs.value)
 
 botao.addEventListener('click', function (botao) {
     botao.preventDefault ()
-    inputs.forEach((itens, indice, array) => {
+    const msgErro = document.querySelectorAll ('.erro')    
+    inputs.forEach((itens, indice) => {        
         if (itens.value === '') {
             itens.classList.add ('vazio')
-            erroNome.classList.add ('mostrar')
-            erroEmail.classList.add ('mostrar')
-            erroTelefone.classList.add ('mostrar')
-            erroMensagem.classList.add ('mostrar')
-
+            msgErro[indice].classList.add ('mostrar')
         } else {
             itens.classList.add ('preenchido')
-            erroNome.classList.remove ('mostrar')
-            erroEmail.classList.remove ('mostrar')
-            erroTelefone.classList.remove ('mostrar')
-            erroMensagem.classList.remove ('mostrar')
+            msgErro[indice].classList.remove ('mostrar')
         }
     })
 })
+
+// const erroNome = document.getElementById('erro-nome')
+// const erroEmail = document.getElementById('erro-email')
+// const erroTelefone = document.getElementById('erro-telefone')
+// const erroMensagem = document.getElementById('erro-mensagem')
 
 // botao.addEventListener ('click', function (botao) {
 //     botao.preventDefault ()
